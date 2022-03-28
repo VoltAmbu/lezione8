@@ -1,4 +1,13 @@
-print("ecco la lista degli esercizi")
+ex = input("ecco la lista degli esercizi, quale vuoi vedere? \n")
+ex = int(ex)
 
-import esercizio1.py
-import esercizio2.py
+if ex == 1:
+  import esercizio1
+if ex == 2:
+  import esercizio2
+if ex == 3:
+  import esercizio3
+if ex == 4:
+  import esercizio4
+if ex == 5:
+  import esercizio5
