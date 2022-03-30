@@ -11,3 +11,5 @@ if ex == 4:
   import esercizio4
 if ex == 5:
   import esercizio5
+if ex == 6:
+  import esercizio6

@@ -1,10 +1,9 @@
-print("\n\n ----ESERCIZIO 4-----")
-#per diagonalizzare una matrice si utilizza il sottomodulo linalg di numpy con  np.linalg.eig(M) trovo autovettori ed autovalori , con np.linalg.eigvals(M) trovo solo gli autovalori
+print("\n\n --------ESERCIZIO 4---------")
 
 import numpy as np
-M=np.loadtxt("matr.txt",dtype='i',delimiter=' ')
-print("matrice\n ",M)
+M=np.loadtxt("M4.txt",dtype='i',delimiter=' ')
+print("matrice di riferimento\n ",M)
 aval,avec= np.linalg.eig(M)
 autovalori= np.linalg.eigvals(M)
-print("autovettori\n", avec)
-print("autovalori calcolati con entrambe le funzioni\n", aval,autovalori)
+print("gli auovettori sono rispettivamente \n", avec)
+print("gli autovalori ottenuti con le due funzioni sono\n", aval,autovalori)

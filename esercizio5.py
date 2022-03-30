@@ -1,4 +1,4 @@
-print("-----ESERCIZIO 5-----")
+print("--------ESERCIZIO 5--------")
 def sigmoide(x):
   s=1/(1+math.exp(-x))
   return s
@@ -6,12 +6,12 @@ def sigmoide(x):
 import numpy as np
 from scipy.special import expit
 import math
-x=input("Scegli in che punto calcolare la sigmoide? x=\n")
+x=input("a quale x vuoi calcolare la funzione?\n")
 x=float(x)
 f=sigmoide(x)
 g=expit(x)
-print("calcolo da funzione definita manualemente sigmoide(x)=",f)
-print("calcolo da funzione di libreria scipy.special.expit sigmoide(x)=",g)
+print("Sfruttando una funzione definita a mano si ottiene: sigmoide(x)=",f)
+print("Sfruttando una funzione di libreria si ottiene: sigmoide(x)=",g)
 
 
 import matplotlib.pyplot as plt
